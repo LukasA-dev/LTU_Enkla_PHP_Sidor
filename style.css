@@ -1,0 +1,142 @@
+/* Importera Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Stilmall för <body> */
+body {
+  font-family: "Poppins", sans-serif; /* Använd Google Font */
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Mörk bakgrundsfärg */
+  color: #fff; /* Vit textfärg */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Gör <body> lika högt som visningsfönstret */
+}
+
+/*Stilmall för .menu */
+.menu {
+  background-color: #333; /* Bakgrundsfärg */
+  padding: 10px 0; /* Lite utrymme ovanför och under menyn */
+  position: fixed; /* Fixera menyn så den är synlig även när du scrollar */
+  top: 0; /* Placera menyn högst upp på sidan */
+  width: 100%; /* Bredden på menyn ska vara lika med sidans bredd */
+  z-index: 1000; /* Se till att menyn är över andra element på sidan */
+}
+
+.menu ul {
+  list-style-type: none; /* Ingen punktlista */
+  margin: 0; /* Ta bort standardmarginalen */
+  padding: 0; /* Ta bort standardpaddingen */
+  text-align: center; /* Centrera menyalternativen */
+}
+
+.menu ul li {
+  display: inline; /* Visa menyalternativen som horisontella */
+  margin-right: 20px; /* Utrymme mellan menyalternativen */
+}
+
+.menu ul li a {
+  color: #fff; /* Textfärg för menyalternativen */
+  text-decoration: none; /* Inga understrykningar på länkarna */
+  padding: 10px; /* Lite utrymme runt texten */
+  transition: color 0.3s; /* Jämn övergång när du hovrar över länkarna */
+}
+
+.menu ul li a:hover {
+  color: #ff69b4; /* Färg för länkarna när du hovrar över dem */
+}
+
+/* Stilmall för HTML dokumentet som laddar in php genom javascript */
+#menu-container {
+  width: 100%; /*  Bredden av containern */
+  margin: 20px auto; /* Centrera menyn vertikalt och horisontellt */
+}
+#footer-container {
+  width: 100%; /* Bredden av containern */
+  margin: 20px auto; /* Centrera footern vertikalt och horisontellt */
+}
+
+/* Stilmall för .container */
+.container {
+  width: 80%; /* Justera bredden efter behov */
+  max-width: 600px; /* Maximal bredd för att förhindra sträckning på större skärmar */
+  margin: 0 auto; /* Centrera behållaren horisontellt */
+  padding: 20px; /* Lägg till lite utfyllnad för avstånd */
+  background-color: #1e1e1e; /* Mörkgrå bakgrund för behållaren */
+  border-radius: 8px; /* Rundade hörn för behållaren */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Skugg effekt för behållaren */
+}
+
+/* Stilmall för <h1> */
+h1,
+h2 {
+  color: #fff; /* Vit textfärg */
+  text-align: center;
+  font-size: 2em; /* Större teckenstorlek */
+  margin-bottom: 20px; /* Lägg till utrymme under rubriken */
+}
+
+/* Stilmall för <h2> */
+h2 {
+  font-size: 1.5em; /* Lite mindre teckenstorlek */
+}
+
+/* Stilmall för <p> */
+p {
+  color: #ddd; /* Ljusgrå textfärg */
+  text-align: center;
+  line-height: 1.5; /* Öka radhöjden för läsbarhet */
+}
+
+/* Stilmall för formulär */
+form {
+  margin-bottom: 20px;
+  text-align: center; /* Centrera texten inom formuläret */
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto 10px; /* Centrera textinmatning */
+  padding: 8px;
+  border: 1px solid #aaa; /* Ljusgrå kant */
+  border-radius: 4px;
+  background-color: #333; /* Mörkgrå bakgrund för inmatning */
+  color: #fff; /* Vit textfärg */
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto; /* Centrera skicka-knappen */
+  padding: 8px 20px; /* Lägg till utfyllnad för knappen */
+  border: none;
+  border-radius: 4px;
+  background-color: #ff69b4; /* Rosa skicka-knapp */
+  background-image: linear-gradient(
+    to bottom right,
+    #ff69b4,
+    #4169e1
+  ); /* Gradient från rosa till blå */
+  color: #fff; /* Vit textfärg */
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #ff1493,
+    #0000cd
+  ); /* Mörkare rosa till mörkare blå vid hover */
+}
+
+/* Stilmall för footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e1e1e; /* Mörk footer bakgrund */
+  color: #ddd; /* Ljusgrå textfärg */
+  padding: 10px;
+  text-align: center;
+}

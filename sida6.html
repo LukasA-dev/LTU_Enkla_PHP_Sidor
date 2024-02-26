@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sida 6 - Formulär</title>
+
+    <!-- Länkar till extern CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Tom behållare för menyn -->
+    <div id="menu-container"></div>
+    <div class="container">
+      <!-- Rubrik -->
+      <h1>Formulär med GET och POST</h1>
+
+      <!-- Formulär för att skicka data med GET och POST -->
+      <form action="sida6.php" method="GET">
+        <h2>GET-formulär</h2>
+        Namn: <input type="text" name="name"><br>
+        E-post: <input type="email" name="email"><br>
+        <input type="submit" value="Skicka med GET">
+      </form>
+
+      <form action="sida6.php" method="POST">
+        <h2>POST-formulär</h2>
+        Namn: <input type="text" name="name"><br>
+        E-post: <input type="email" name="email"><br>
+        <input type="submit" value="Skicka med POST">
+      </form>
+    </div>
+
+    <!-- Tom behållare för footern -->
+    <div id="footer-container"></div>
+    <!-- Länk till extern JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
